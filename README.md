@@ -22,13 +22,13 @@ pomodoro-timer/
 ├── styles.css
 ├── script.js
 ├── sounds/
-│ ├── rain.mp3
-│ ├── beach.mp3
-│ ├── birds.mp3
-│ ├── forest.mp3
-│ └── calm.mp3
+│   ├── rain.mp3
+│   ├── beach.mp3
+│   ├── birds.mp3
+│   ├── forest.mp3
+│   └── calm.mp3
 └── images/
-└── bg.jpg
+    └── bg.jpg
 
 ---
 
@@ -42,15 +42,17 @@ pomodoro-timer/
 
 2. **Open index.html in your browser:**
    You can simply double-click index.html, or
+   
    Run a local server with VS Code Live Server extension
 
-3. **You can tweak it easily:**
+4. **You can tweak it easily:**
    Change focus/break duration in script.js:
-
+    ```bash
     let focusTime = 25 * 60; // 25 minutes
     let breakTime = 5 * 60;  // 5 minutes
-    Add/Replace ambient sounds in the sounds/ folder.
-    Change background image in images/bg.jpg.
+    
+ Add/Replace ambient sounds in the sounds/ folder.   
+ Change background image in images/bg.jpg.
 
 License
 This project is licensed under the MIT License.
