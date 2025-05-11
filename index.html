@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <h1>Pomodoro Timer</h1>
+      <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">What is Pomodoro?</a>
+      <p>25 minutes of focus, followed by 5 minutes of relaxation. Repeat for productivity!</p>
+      <div id="status">Focus Time</div>
+      <div class="progress-container">
+        <svg class="progress-ring" width="180" height="180">
+          <circle class="progress-ring__background" stroke="#ddd" stroke-width="10" fill="transparent" r="80" cx="90" cy="90"/>
+          <circle class="progress-ring__circle" stroke="#ffafcc" stroke-width="10" fill="transparent" r="80" cx="90" cy="90"/>
+        </svg>
+        <div id="timer" class="timer-text">25:00</div>
+      </div>
+      
+  
+      <div class="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+        <button onclick="alert('Stay hydrated and keep going! 💧')">Motivate Me</button>
+      </div>
+  
+      <div class="sound-controls">
+        <label for="soundSelect">🎶 Ambient Sound:</label>
+        <select id="soundSelect" onchange="changeSound()">
+          <option value="">-- None --</option>
+          <option value="rain">Rain</option>
+          <option value="beach">Beach</option>
+          <option value="birds">Birds</option>
+          <option value="forest">Forest</option>
+          <option value="calm">Wind</option>
+        </select>
+        <button id="playBtn" onclick="playSound()">▶</button>
+        <button id="pauseBtn" onclick="pauseSound()">⏸</button>
+        <label for="volumeSlider">🔊 Volume:</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+        <button id="darkModeToggle">Dark Mode</button>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+    <audio id="ambientSound" loop></audio>
+
+  </body>
+  
+</html>
