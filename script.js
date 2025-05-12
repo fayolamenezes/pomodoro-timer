@@ -34,7 +34,7 @@ volumeSlider.addEventListener("input", () => {
 function changeSound() {
   const sound = document.getElementById("soundSelect").value;
   if (sound) {
-    audio.src = `sounds/${sound}.mp3`;
+    audio.src = `/sounds/${sound}.mp3`;
     audio.loop = true;
     audio.volume = 0.5; // Default volume
     if (isPlaying) {
