@@ -83,6 +83,11 @@ function startTimer() {
         clearInterval(interval);
         isRunning = false;
         isFocus = !isFocus;
+
+        const chime = document.getElementById("chimeSound");
+        chime.currentTime = 0;
+        chime.play(); // Play chime sound
+
         timeLeft = isFocus ? focusTime : breakTime;
         alert(isFocus ? "Break over! Back to focus! 💪" : "Time for a break! ☕");
 
