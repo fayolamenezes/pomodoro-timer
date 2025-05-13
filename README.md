@@ -54,5 +54,8 @@ pomodoro-timer/
  Add/Replace ambient sounds in the sounds/ folder.   
  Change background image in images/bg.jpg.
 
+5. **Deployed Version:**
+    You can also try out the live version of the Pomodoro Timer on [Visit Vercel](https://pomodoro-timer-rho-two.vercel.app/).
+
 License
 This project is licensed under the MIT License.
